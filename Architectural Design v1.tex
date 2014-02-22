@@ -1,0 +1,74 @@
+\documentclass[11pt,a4paper]{article}
+\begin{document}
+\begin{titlepage}
+\title{Architectural Design}
+\author{29236259}
+\maketitle
+\end{titlepage}
+
+
+\section{Access channel requirements}
+The system's services are to be accessed by Android application clients and Browser clients through its web interface. These are the only two platforms that are to be supported by the system. 
+\section{Quality requirements}
+\subsection{Performance}
+\begin{itemize}
+\item System must not take more than 1.5 seconds to return a searched for student.
+\item A request to view marks must be granted within 1.2 seconds.
+\item System must have auto complete mechanism for search services.
+\end{itemize}
+\subsection{Audit-ability}
+\begin{itemize}
+\item Every action on the system must be recorded on a log that can later be viewed and queried.
+\item Actions that are to be recorded
+\begin{itemize}
+\item The current user performing the action.
+\item New mark capturing.
+\item Deletion of marks.
+\item Edition of marks.
+\item Reason for editing the marks.
+\item The date/time on which an action was performed.
+\end{itemize}
+\end{itemize}
+\subsection{Scalabity}
+\begin{itemize}
+\item The system must be able to be accessed by up to the current number of students registered for the course at any point.
+\item Additions and updates must be available to all the TA's when a mark sheet is unlocked.
+\end{itemize}
+\subsection{Authorization}
+\begin{itemize}
+\item All actions are granted to a user based on the privileges they have.
+\end{itemize}
+\subsection{Authentication}
+\begin{itemize}
+\item The system must have an access control mechanism.
+\item Access control must be handled at log in/out points.
+\end{itemize}
+\section{Integration requirements}
+TO BE DONE
+\section{Architecture constraints}
+\subsection{Technologies to be used}
+\begin{itemize}
+\item For the application platform
+\begin{itemize}
+\item Android SDK
+\item Java
+\end{itemize}
+\item For the web interface
+\begin{itemize}
+\item JavaScript
+\item HTML 4.0/HTML 5
+\end{itemize}
+\item Must be secure therefore must run over HTTPS
+\item Server side
+\begin{itemize}
+\item Django framework
+\item Python
+\end{itemize}
+\item Web service
+\begin{itemize}
+\item SOAP
+\end{itemize}
+\item MySQL for database
+\item LDAP for distributed directory information service
+\end{itemize}
+\end{document}
