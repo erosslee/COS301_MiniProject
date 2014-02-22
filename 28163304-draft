@@ -1,0 +1,31 @@
+Design an application interface that would enable a marker to upload the mark of a student, in a practical session, with his/her phone.
+Phone interface for the marker:
+•	Markers should only be able to view students who have registered for the specific practical period the marker is assigned to.
+•	On specific markers with specific credentials should be able to log on to the app.
+•	Markers can only log onto the application for their’ specified time slot and the application should run a check to provide this.
+•	The marker should be able to look up the student being marked on his/her phone with either a student number or a first, last or both the first and last names of the student.
+•	The interface should be simplistic and show the rubric and mark layout and have input boxes for the different mark fields.
+•	For a change of a mark, the marker must provide a reason in the textbox that is saved for future reference.
+A web interface is also needed for lecturers and students.
+•	Lecturers:
+o	Can only view records for courses they are in charge of.
+o	Need to be able to view records of marks as well as specific marks.
+o	PDF documents for Lecturers should be generated detailing marks and descriptions.
+o	Graphs of students’ marks should also be generated in the form of normal distributions, bar graphs and pie charts.
+o	Counts of students should be available, as well as students registered standard deviations, averages and medians.
+•	Students:
+o	Students should only be allowed to view their’ own marks and check their progress in the course thus far as well as overall progress with the course.
+o	The student should not be able to edit marks.
+
+Specific application requirements:
+•	This application should be:
+o	Accessible on android phones.
+o	Scalable and viewable on devices.
+o	Secure and information sent and received should be encrypted.
+o	Auto log out after a specified time.
+The application:
+•	Should have a database containing all students, lecturers and administrators as well as markers and a root user.
+o	The root user should have access to all fields of the database. 
+•	Should integrate with the automatic marker Fitchfork to receive specific student marks and be able to add these marks to a students’ mark database.
+•	Should auto-complete names and student numbers being entered by markers. 
+•	Generate CSV files for viewing and also be able to accept CSV files of marks for input into the database of students marks.
