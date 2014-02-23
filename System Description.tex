@@ -1,0 +1,49 @@
+\documentclass[11pt,a4paper]{article}
+\begin{document}
+
+\section{System Description}
+The primary function of this system is to enable markers to be able to mark and upload students' practical marks via the mobile application/website on their mobile devices. In doing so, paperwork is eliminated because it can end up getting lost as it has to change hands from the marker to another person who will hopefully get it to the destination, the lecturer.\\ 
+
+The mobile application used by the markers will be communicating with a database(which contains the systems information) used to store students' practical marks. Along with the mobile app the system will have a web-interface that will be used by students and lecturers.\\
+
+The system will have 3 active users: students, markers and lecturers.
+Users will be associated to a module/s. Once a user has logged in onto the system, each will have the following features which they can use:\\
+
+\textbf{Student}
+\begin{itemize} 
+\item View his/her mark/s for a module
+\item Track his/her progress in the module
+\end{itemize} 
+
+\textbf{Marker}
+\begin{itemize} 
+\item View the students registered for a practical session the marker is responsible for,
+\item search for students by either their student number, first name or surname,
+\item mark a students practical and upload the mark for it to be stored in the database, and
+\item edit a student's mark provided a reason is given and a lecturer has authorized the action
+\end{itemize} 
+
+\textbf{Lecturer}
+\begin{itemize}  
+\item Assign markers to a practical session,
+\item give markers certain permissions(e.g. allow a marker to edit a students practical mark),
+\item view the marks of all the students registered for their module,
+\item outline marking guidelines for a practical,
+\item import and export csv files, and
+\item generate a report on marks for their module(this should at least include the following: a normal curve, bar graph/s, pie chart/s, the number of students registered for that module, averages, standard deviations, the number of students that passed/failed and the medians)   
+\end{itemize}
+
+There will be an audit log with the details of the activities that will be happening within the system so there is accountability for every action. This audit log will not be editable by any user but can be viewed by the root user when necessary.\\
+
+In addition to that the system will have to be interfaced with the practcal booking system(to associate a student with a practical session)
+and the auto-marking system(Fitchfork) for practicals that will not be marked by markers.\\
+
+The system will be implemented according to the Model-View-Controller(MVC) architectural design pattern. \\
+\begin{itemize}
+\item Model:		 The database with information about the system.
+\item View: 		 The website and mobile application.
+\item Controller :   The Simple Object Access Protocol(SOAP) interface.
+\end{itemize}
+
+ 
+\end{document}
