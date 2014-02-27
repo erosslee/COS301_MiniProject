@@ -1,0 +1,141 @@
+\section{Use case/Services contracts}
+
+\par{Pre-conditions and Post-conditions}\\
+
+\subsection{Search for student}
+\subsubsection{Pre-conditions}
+\begin{itemize}
+\item The marker or lecturer doing the search must be logged in.
+\item Student must be in the correct marking session.
+\item Valid student number should be entered or
+\item Student name and/or surname should be entered correctly.
+\end{itemize}
+\subsubsection{Post-conditions}
+\begin{itemize}
+\item The student is successfully found.
+\item The student's details are displayed.
+\item Option for a marker to update a mark is displayed.
+\end{itemize}
+
+\subsection{Update student mark}
+\subsubsection{Pre-conditions}
+\begin{itemize}
+\item The student should be successfully found.
+\item A valid reason for mark update is provided.
+\item Valid mark entered.
+\end{itemize}
+\subsubsection{Post-conditions}
+\begin{itemize}
+\item Mark successfully updated to marks database.
+\item Audit log successfully updated to reflect the updated mark, the time of the update and the personnel number of the marker.
+\end{itemize}
+
+
+\subsection{View marks}
+\subsubsection{Pre-conditions}
+\begin{itemize}
+\item Student has to be logged in.
+\end{itemize}
+\subsubsection{Post-conditions}
+\begin{itemize}
+\item Student can successfully only view own marks.
+\item Mark sheet being viewed remains locked to the student so that the student can not edit any marks.
+\end{itemize}
+
+\subsection{Login}
+\subsubsection{Pre-conditions}
+\begin{itemize}
+\item User credentials must be valid
+\end{itemize}
+\subsubsection{Post-conditions}
+\begin{itemize}
+\item User has access to the functionality of the application as determined by their role (Student, Marker, Lecturer, Root User).
+\end{itemize}
+
+\subsection{Logout}
+\subsubsection{Pre-conditions}
+\begin{itemize}
+\item User has to be logged in
+\item (Automatic logout condition) No action has been taken by the user in the last 5 minutes
+\end{itemize}
+\subsubsection{Post-conditions}
+\begin{itemize}
+\item User successfully logged out.
+\end{itemize}
+
+\subsection{Edit mark/assessment session}
+\subsubsection{Pre-conditions}
+\begin{itemize}
+\item The lecturer should be logged in.
+\end{itemize}
+\subsubsection{Post-conditions}
+\begin{itemize}
+\item Successfully made changes to the  mark/assessment session.
+\end{itemize}
+
+\subsection{Create mark/assessment session}
+\subsubsection{Pre-conditions}
+\begin{itemize}
+\item The lecturer should be logged in.
+\end{itemize}
+\subsubsection{Post-conditions}
+\begin{itemize}
+\item Successfully created mark/assessment session in marks database.
+\item Mark/assessment session available for managing by the lecturer.
+\end{itemize}
+
+\subsection{Create report}
+\subsubsection{Pre-conditions}
+\begin{itemize}
+\item The lecturer should be logged in.
+\end{itemize}
+\subsubsection{Post-conditions}
+\begin{itemize}
+\item Report successfully generated for lecturer viewing.
+\item Option given to export the report as either a PDF or CSV file.
+\end{itemize}
+
+\subsection{Export marks}
+\subsubsection{Pre-conditions}
+\begin{itemize}
+\item The lecturer should be logged in.
+\item Mark sheets from which marks are to be selected are locked.
+\item The lecturer selects which marks to export.
+\end{itemize}
+\subsubsection{Post-conditions}
+\begin{itemize}
+\item Marks successfully exported as a CSV file.
+\end{itemize}
+
+\subsection{Import marks}
+\subsubsection{Pre-conditions}
+\begin{itemize}
+\item The lecturer should be logged in.
+\item Mark/assessment session for which the marks are intended must already exist.
+\item File to be imported must be in CSV format.
+\end{itemize}
+\subsubsection{Post-conditions}
+\begin{itemize}
+\item Marks successfully updated to the mark sheet of the relevant mark/assessment session in the marks database.
+\end{itemize}
+
+\subsection{View audit log}
+\subsubsection{Pre-conditions}
+\begin{itemize}
+\item Root user should be logged in.
+\end{itemize}
+\subsubsection{Post-conditions}
+\begin{itemize}
+\item Root user is able to view the audit log.
+\end{itemize}
+
+\subsection{Assign marker to mark/assessment session}
+\subsubsection{Pre-conditions}
+\begin{itemize}
+\item Lecturer has to be logged in.
+\item Session should already exist.
+\end{itemize}
+\subsubsection{Post-conditions}
+\begin{itemize}
+\item Marker is successfully added to the mark/assessment session.
+\end{itemize}
