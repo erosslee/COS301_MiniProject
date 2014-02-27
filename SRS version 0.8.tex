@@ -27,6 +27,9 @@ Moeletji Semenya (12349136)\\
 \textit{For:} \\
 Mr. Jan Kroeze (University of Pretoria)
 
+\vspace{0.5cm}
+February 26, 2014
+
 \end{center}
 \end{titlepage}
 \newpage
@@ -38,31 +41,33 @@ Mr. Jan Kroeze (University of Pretoria)
 \setcounter{page}{1}
 \pagestyle{plain}
 \section{Introduction}
-\textbf{(DONE by Zenadia - awaiting approval)}\\
-The purpose of this requirements document is to identify and assess the specifications of the project, for the developers; as indicated by the client, the University of Pretoriaâ€™s Department of Computer Science. 
-This document is to ensure that the requirements, specifications and scope of the project are understood and followed and to ensure that any and all parties involved understand the implications and understand what the final product should be capable of. This documents serves as an official contract and agreement between the developers and the client.
+The purpose of this document is to specify the requirements for this project.  Developers will find this useful as the content describes the vision, scope and architectural requirements as specified by the client, Mr. Jan Kroeze, from the University of Pretoria\textquoteright s Department of Computer Science. Also, it will help all parties that are involved to understand the implications and what the final product should be capable of. This document serves as an official contract and agreement between the developers and the client.
 
 \section{Vision}
-\textbf{(DONE by Z\"uhnja - needs to be checked)}\\
-The main purpose of this project is that marks can easily be added directly to the university\textquoteright
-s database through a user-friendly interface. No in between procedures.   Evaluators will be able to access the system with a mobile approach or via computer while they are assessing.  Students will be able to log into the system and view all of their marks. \\ \\
-The client\textquoteright
-s main aim with this project is to simplify and increase the efficiency of the marking system.
-The project in question is meant to provide the Department of Computer Science with a sustainable and convenient system by which marks may be kept track of, changed and stored in a secure and efficient manner:
-\begin{enumerate}
-\item Store the marks of students registered for specific modules.
-\item Keep track of the marks of registered students.
-\item Track any and all changes made to marks at any point in time.
-\item Track tutors assigned to courses and assessments.
-\item Keep track of individual class/tutorial/practical/test averages as well as overall course averages.
-\item Keep track of overall marks for individual students.
-\item Update and display mark statistics in the form of graphs.
-\item Store information regarding the privileges of lecturers and tutors.
-\end{enumerate}This project scope serves as a basis for the project to expand for various similar applications with minimal changes necessary.
+The main purpose of this project is to:
+\begin{itemize}
+\item provide the Department of Computer Science with a sustainable and convenient system by which marks may be kept track of, changed and stored in a secure and efficient manner.  
+\item allow markers to conveniently access the system in question with their mobile devices. 
+\item allow students to view their marks.
+\end{itemize}
+
+This project scope serves as a basis for the project to expand for various similar applications with minimal changes necessary.
 
 \section{Background}
-\textbf{(DONE by Z\"uhnja, edited and amended by Zenadia - needs to be checked)}\\
-This project is the result of the Department of Computer Scienceâ€˜s need for their own improved marking system to potentially better the administration of students and their marks, and their decision to utilise the COS 301 courseâ€™s learning opportunity for the development of the required marking system; however it is also to prepare the developers for the larger undertaking of a similar task for external benefactors and stakeholders. These, among the aforementioned, have led to the development of this project:
+Currently students view their marks for COS modules once they are posted
+on the CS website. It is usually listed according to their student numbers;
+thus students are able to view each other's marks. \\ \\
+During COS practical
+evaluations, markers evaluate each student's work and write their marks
+down on paper. That then has to be passed to someone who has the time to
+enter the marks into the University's system. In the process of this marking
+system, the marks can easily get lost or be tampered with. \\ \\
+The aim of this project is to eliminate these threats. Marks won't have the
+opportunity to get lost, since they will be added to the system immediately.
+Students will be able to access their marks once it is added to
+the system and they won't be able to view any marks that are not their
+own.\\ \\
+This project is the result of the Department of Computer Science need for their own improved marking system to potentially better the administration of students and their marks, and their decision to utilise the COS 301 courseâ€™s learning opportunity for the development of the required marking system; however it is also to prepare the developers for the larger undertaking of a similar task for external benefactors and stakeholders. These, among the aforementioned, have led to the development of this project:
 \begin{enumerate}
 	\item Potential business opportunities.
 	\item The potential for work experience and skills development.
@@ -71,13 +76,12 @@ This project is the result of the Department of Computer Scienceâ€˜s need fo
 	\item The opportunity to learn how software development integrates with the business environment.
 	\item Eliminating a common problems experienced by lecturers and students alike with regards to mark management and administration.
 \end{enumerate}
-Currently students view their marks for COS modules once they are posted on the CS website.  It is usually listed according to their student numbers; thus students are able to view each other's marks. 
-During COS practical evaluations, markers evaluate each student's work and write their marks down on paper. That then has to be passed to someone who has the time to enter the marks into the University's system. In the process of this marking system the marks can easily get lost or be tampered with. \\
-The aim of this project is to eliminate these threats. Marks won't have the opportunity to get lost, since they will be added to the system immediately. Students will be able to immediately access their marks once it is added to the system and they won't be able to view any marks that are not their own. 
+ 
+
 
 \section{Stakeholders}
 \textbf{(DONE by Moeletji - needs to be checked)}\\
-The stakeholders invloved in this project are: 
+The stakeholders invloved: 
 \begin{itemize}
 \item Mr. Jan Kroeze and the Department of Computer Science (client). 
 \item Students and lecturers at the Department of Computer Science (end-users).
@@ -319,7 +323,7 @@ For each use case/service specify
 For some of the use cases there may be requirements around the process which needs to be followed. If so, these requirements are typically specified via activity and/or sequence diagrams or
 alternatively via state charts.
 \subsection{Domain Objects}
-\includegraphics[width=1.0\linewidth]{Class_Diagram}
+\ \if includegraphics[width=1.0\linewidth]{Class_Diagram}\fi
 \\\\
 Above is a class digram of the system with classes that contain attributes and methods in order to make the relatioships easier to comprehend. 
 \section{Open Issues}
@@ -331,6 +335,6 @@ Discuss in this section
 \end{itemize}
 \section{Glossary}
 The requirements is to be read, understood and validated by a range of people from very different backgrounds (the client, domain experts/business analysts, the developers, software architects, users, ... ). Use a glossary to explain any terms which some parties may not be familiar with.
-
+COS
 
 \end{document}
